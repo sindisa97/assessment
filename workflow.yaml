@@ -34,6 +34,6 @@ jobs:
           kubeconfig: ${{ secrets.KUBECONFIG }}
           command: apply
           manifest: |
-            kubernetes/deployment.yaml
-            kubernetes/service.yaml # change to your service manifest
+            deployment.yaml
+            service.yaml 
 
