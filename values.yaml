@@ -1,0 +1,17 @@
+replicaCount: 3
+image:
+  repository: sindisadocker/assessment
+  tag: latest
+  pullSecrets: myregistrykey
+service:
+  type: ClusterIP
+  port: 80
+
+secret:
+  username: sindisa97
+  password: mypassword
+
+configMap:
+  myconfigmap:
+    key1: value1
+    key2: value2
